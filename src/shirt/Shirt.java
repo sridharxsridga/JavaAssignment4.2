@@ -31,7 +31,7 @@ public class Shirt {
 	private static int shirtSleeveLength;
 	private String material;   //need to use the following code to declare the material variable private String material:
 
-	Shirt() {
+	Shirt() {  //initialising default values
 		this.shirtCollarSize = 13;
 		this.shirtSleeveLength = 30;
 		material = "Cotton";
@@ -44,32 +44,32 @@ public class Shirt {
 	}
 
 	// Make all the member methods public. The methods will not be static. Add accessor (get) and	mutator (set) methods for each member variable
-	public  int getShirtCollarSize() {
+	public  int getShirtCollarSize() {  //Getter method for shirtCollarSize
 		return shirtCollarSize;
 	}
 
-	public  void setShirtCollarSize(int shirtCollarSize) {
+	public  void setShirtCollarSize(int shirtCollarSize) {  //Setter method for shirtCollarSize
 		Shirt.shirtCollarSize = shirtCollarSize;
 	}
 
-	public  int getShirtSleeveLength() {
+	public  int getShirtSleeveLength() { //Getter method for shirtSleeveLength
 		return shirtSleeveLength;
 	}
 
-	public  void setShirtSleeveLength(int shirtSleeveLength) {
+	public  void setShirtSleeveLength(int shirtSleeveLength) {  //Setter method for shirtSleeveLength
 		Shirt.shirtSleeveLength = shirtSleeveLength;
 	}
 
-	public String getMaterial() {
+	public String getMaterial() {  //Getter method for material
 		
 		return material;
 	}
 	
-	public void printShirtMaterial(){
+	public void printShirtMaterial(){ //print shirt details
 		System.out.println("The material is " + material);  //use some variation of the following code to print the material member variable: System.out.println("The material is " + material)
 	}
 
-	public void setMaterial(String material) {
+	public void setMaterial(String material) { //Setter method for material
 		this.material = material;
 	}
 	
